@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
 import { Product } from '../product.model';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+  providers: [ProductService]
 })
 
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
   }
 
   submitForm(name: string, price: number, description: string, image: string, amount: number) {
    var newProduct: Product = new Product(name, price, description, image, amount);
-   console.log(newProduct);
+   this.productService.addProduct(newProduct);
  }
 
 }

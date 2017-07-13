@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MarketPlaceComponent } from './market-place/market-place.component';
 import { AdminComponent } from './admin/admin.component';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -19,8 +19,12 @@ const appRoutes: Routes = [
   component: AdminComponent
   },
   {
-  path:'item-detail',
-  component: ItemDetailComponent
+    path: 'products/:id',
+    component: ProductDetailComponent
+  },
+  {
+  path:'product-detail',
+  component: ProductDetailComponent
   }
 ];
 
