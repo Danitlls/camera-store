@@ -1,0 +1,8 @@
+{ "products": [{
+    "name": "Nikon D7000",
+    "price": 1200,
+    "description": "HD video capturing and 25 megapixel images",
+    "image": "http://cdn-4.nikon-cdn.com/e/Q5NM96RZZo-YRYNeYvAi9beHK4x3L-8mX69Pbfmts6tdBc3nhkXw342PrZai3VRA/Views/25468_D7000_left.png",
+    "amount": 5000
+    }]
+}

@@ -1,0 +1,12 @@
+
+<!-- item-detail -->
+<!-- <item-detail [selectedAlbum]="album"></item-detail> -->
+
+<h2>Marketplace</h2>
+
+<div *ngFor="let product of products | async" (click)="goToDetailPage(product)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{product.name}}</em> ${{product.price}}</h3>
+  </div>
+</div>
+<!-- <item-detail></item-detail> -->
