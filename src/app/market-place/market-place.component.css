@@ -1,0 +1,30 @@
+img {
+  width: 55%;
+}
+.work{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.panel {
+  display: flex;
+  width: 28.2%;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+
+
+.panel-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: salmon;
+}
+
+label {
+  margin: 7px;
+}
+
+input {
+
+}
