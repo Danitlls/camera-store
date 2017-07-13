@@ -1,3 +1,34 @@
-<p>
-  admin works!
-</p>
+<h3>Add New Product to Inventory</h3>
+<div>
+  <div>
+    <label>Product Name:</label>
+    <br>
+    <input #newProduct>
+  </div>
+
+  <div>
+    <label>Product Price:</label>
+    <br>
+    <input #newPrice>
+  </div>
+
+  <div>
+    <label>Product Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+
+  <div>
+    <label>Product image URL:</label>
+    <br>
+    <textarea #newImage></textarea>
+  </div>
+
+  <div>
+    <label>Product Amount Available:</label>
+    <br>
+    <textarea #newAmount></textarea>
+  </div>
+</div>
+
+ <button (click)="submitForm(newProduct.value, newPrice.value, newDescription.value, newImage.value, newAmount.value); newProduct.value=''; newPrice.value=''; newDescription.value=''; newImage.value=''; newAmount.value= '' ">Add</button>
